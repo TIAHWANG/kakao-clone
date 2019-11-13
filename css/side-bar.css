@@ -1,0 +1,137 @@
+#side-bar {
+  height: 100%;
+  position: fixed;
+  right: 0;
+  top: 0;
+  width: 200px;
+  margin-top: 95px;
+  transform: translateX(250px);
+  transition: transform 250ms ease-in-out;
+  background: white;
+  z-index: 6;
+}
+.side-bar__lists {
+  border-top: 2px solid #3f4c6b;
+}
+.side-bar__lists li {
+  color: black;
+  padding: 20px;
+  border-bottom: 1px solid rgba(63, 76, 107, 0.3);
+  font-weight: 600;
+}
+.side-bar__lists .side-bar__list {
+  justify-content: space-between;
+}
+.side-bar__header {
+  display: inline-block;
+}
+.side-bar__lists .side-bar__contents {
+  display: inline-block;
+  font-size: 13px;
+  margin-top: 15px;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  font-weight: 400;
+}
+.side-bar__lists .side-bar__title {
+  display: inline-block;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+.side-bar__contents i,
+.side-bar__title i {
+  padding-right: 5px;
+  font-size: 13px;
+}
+
+.side-bar__contents i:nth-child(2),
+.side-bar__title i {
+  opacity: 0.3;
+}
+
+input[type="checkbox"]:checked ~ #side-bar {
+  transform: translateX(0);
+}
+
+input[type="checkbox"] {
+  transition: all 0.3s;
+  display: none;
+}
+.side-bar__toggle {
+  transition: all 0.3s;
+  cursor: pointer;
+  position: absolute;
+  z-index: 5;
+  top: 50px;
+  right: 17px;
+  height: 25px;
+  width: 25px;
+}
+.spinner {
+  transition: all 0.3s;
+  position: absolute;
+  right: 0;
+  height: 3px;
+  width: 100%;
+  background-color: #fff;
+}
+.horizontal {
+  transition: all 0.3s;
+  position: relative;
+  float: right;
+  margin-top: 3px;
+}
+.diagonal.part-1 {
+  position: relative;
+  transition: all 0.3s;
+  float: right;
+}
+.diagonal.part-2 {
+  transition: all 0.3s;
+  position: relative;
+  float: right;
+  margin-top: 3px;
+}
+input[type="checkbox"]:checked ~ .side-bar__toggle > .horizontal {
+  transition: all 0.3s;
+  opacity: 0;
+}
+input[type="checkbox"]:checked ~ .side-bar__toggle > .diagonal.part-1 {
+  transition: all 0.3s;
+  transform: rotate(135deg);
+  margin-top: 8px;
+}
+input[type="checkbox"]:checked ~ .side-bar__toggle > .diagonal.part-2 {
+  transition: all 0.3s;
+  transform: rotate(-135deg);
+  margin-top: -9px;
+}
+
+.side-bar__nav {
+  position: fixed;
+  width: 200px;
+  background-color: rgba(63, 76, 107, 0.2);
+  padding: 20px;
+  right: 0px;
+  bottom: 110px;
+  border-top: 1px solid rgba(63, 76, 107, 0.3);
+}
+
+.side-bar__nav .nav__list {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+.side-bar__nav i {
+  font-size: 18px;
+  padding-left: 15px;
+  cursor: pointer;
+  color: rgba(63, 76, 107, 0.5);
+}
+
+.side-bar__nav i:hover {
+  color: rgba(63, 76, 107, 0.8);
+}

@@ -13,32 +13,34 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Friends | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+  <body class="body-header">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Friends</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Friends</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
     <main class="friends">
       <header class="friends__header">
         <div class="friends__friend friend">
@@ -55,27 +57,38 @@
           </div>
         </div>
       </header>
-      <div class="friends__plus">
-        <h5 class="friends__title">Plus Friend</h5>
-        <div class="friends__friend friend">
+      <ul class="friends__list">
+        <h5 class="friends__title">Favorites</h5>
+        <li class="friends__friend friend">
           <div class="friend__column">
-            <img class="friend__avatar" src="img/avatar.jpeg" />
+            <img class="friend__avatar" src="img/anyone.jpeg" />
             <div class="friend__content">
               <span class="friend__name">
-                Plus Friend
+                마
+              </span>
+              <span class="friend__status"> </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/jiyoon.png" />
+            <div class="friend__content">
+              <span class="friend__name">
+                윤
+              </span>
+              <span class="friend__status">
+                be happy
               </span>
             </div>
           </div>
-        </div>
-      </div>
-      <ul class="friends__list">
-        <h5 class="friends__title">Friends 14</h5>
+        </li>
         <li class="friends__friend friend">
           <div class="friend__column">
             <img class="friend__avatar" src="img/terry.png" />
             <div class="friend__content">
               <span class="friend__name">
-                Terry Pak
+                Terry
               </span>
               <span class="friend__status">
                 No regrets
@@ -85,7 +98,101 @@
           <div class="friend__column">
             <div class="friend__now-listening">
               <span>
-                지독하게 - FTISLAND
+                Señorita-Camila Cabello
+              </span>
+              <i class="fas fa-play"></i>
+            </div>
+          </div>
+        </li>
+      </ul>
+      <ul class="friends__list">
+        <h5 class="friends__title">Friends 7</h5>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/anyone.jpeg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                규수
+              </span>
+              <span class="friend__status"> </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/anyone.jpeg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                마
+              </span>
+              <span class="friend__status"> </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/anyone.jpeg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                세진
+              </span>
+              <span class="friend__status">
+                울랄라
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/anyone.jpeg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                승호
+              </span>
+              <span class="friend__status"> </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/jiyoon.png" />
+            <div class="friend__content">
+              <span class="friend__name">
+                윤
+              </span>
+              <span class="friend__status">
+                be happy
+              </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/anyone.jpeg" />
+            <div class="friend__content">
+              <span class="friend__name">
+                형그니
+              </span>
+              <span class="friend__status"> </span>
+            </div>
+          </div>
+        </li>
+        <li class="friends__friend friend">
+          <div class="friend__column">
+            <img class="friend__avatar" src="img/terry.png" />
+            <div class="friend__content">
+              <span class="friend__name">
+                Terry
+              </span>
+              <span class="friend__status">
+                No regrets
+              </span>
+            </div>
+          </div>
+          <div class="friend__column">
+            <div class="friend__now-listening">
+              <span>
+                Señorita-Camila Cabello
               </span>
               <i class="fas fa-play"></i>
             </div>
@@ -102,6 +209,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
+            <div class="nav__badge">4</div>
             <i class="far fa-comment"></i>
           </a>
         </li>
@@ -118,7 +226,9 @@
       </ul>
     </nav>
     <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small 😱</span>
+      <h1 class="bigScreen__text">
+        Please make your screen <br />SMALL<br />:)
+      </h1>
     </div>
   </body>
 </html>

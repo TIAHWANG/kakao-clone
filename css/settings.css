@@ -10,7 +10,7 @@
 }
 
 .settings__setting .settings__title {
-  font-size: 20px;
+  font-size: 15px;
   font-weight: 300;
 }
 
@@ -20,4 +20,16 @@
 
 .settings .settings__setting:last-child {
   margin-bottom: 0;
+}
+
+.settings .settings__title {
+  cursor: pointer;
+}
+
+.settings .settings__detail {
+  display: block;
+  font-size: 10px;
+  padding-left: 40px;
+  padding-top: 10px;
+  opacity: 0.5;
 }

@@ -1,15 +1,19 @@
-.friends .friends__header {
+.friends .friends__header,
+.chats .chats__list {
+  margin-top: 30px;
+  margin-left: 15px;
   padding-bottom: 10px;
 }
 
-.friends .friends__plus {
-  padding: 20px 0px;
+.friends .friends__list {
+  padding: 20px 0px 0px 0px;
   border-top: 1px solid #f7f7f7;
-  border-bottom: 1px solid #f7f7f7;
-  margin: 20px 0px;
+  margin: 20px 15px 0px 15px;
+}
+.chats .chats__list {
+  margin: 20px 15px 0px 15px;
 }
 
-.friends__plus .friends__title,
 .friends__list .friends__title {
   font-size: 14px;
   opacity: 0.6;

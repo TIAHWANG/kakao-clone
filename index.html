@@ -13,53 +13,78 @@
     <link rel="stylesheet" href="css/styles.css" />
     <title>Chats | Kakao Clone</title>
   </head>
-  <body>
-    <div class="status-bar">
-      <div class="status-bar__column">
-        <span class="status-bar__clock">13:54</span>
+  <body class="body-header">
+    <div class="header-wrapper">
+      <div class="status-bar">
+        <div class="status-bar__column">
+          <span class="status-bar__clock">13:54</span>
+        </div>
+        <div class="status-bar__column">
+          <i class="fas fa-clock"></i>
+          <i class="fas fa-volume-mute"></i>
+          <i class="fas fa-wifi"></i>
+          <span class="status-bar__battery-level">100%</span>
+          <i class="fas fa-battery-full"></i>
+        </div>
       </div>
-      <div class="status-bar__column">
-        <i class="fas fa-clock"></i>
-        <i class="fas fa-volume-mute"></i>
-        <i class="fas fa-wifi"></i>
-        <span class="status-bar__battery-level">100%</span>
-        <i class="fas fa-battery-full"></i>
-      </div>
+      <header class="header">
+        <div class="header__header-column">
+          <h1 class="header__title">Chats</h1>
+        </div>
+        <div class="header__header-column">
+          <span class="header__icon">
+            <i class="fas fa-search"></i>
+          </span>
+          <span class="header__icon">
+            <i class="far fa-comment"></i>
+          </span>
+          <span class="header__icon">
+            <i class="fas fa-cog"></i>
+          </span>
+        </div>
+      </header>
     </div>
-    <header class="header">
-      <div class="header__header-column">
-        <h1 class="header__title">Chats</h1>
-      </div>
-      <div class="header__header-column">
-        <span class="header__icon">
-          <i class="fas fa-search"></i>
-        </span>
-        <span class="header__icon">
-          <i class="far fa-comment"></i>
-        </span>
-        <span class="header__icon">
-          <i class="fas fa-cog"></i>
-        </span>
-      </div>
-    </header>
     <main class="chats">
       <ul class="chats__list">
         <li class="chats__chat chat">
           <a href="chat.html">
-            <div class="friends__friend friend">
+            <div class="friends__friend friend friend-hover">
               <div class="friend__column">
                 <img class="friend__avatar  m-avatar" src="img/terry.png" />
                 <div class="friend__content">
                   <span class="friend__name">
-                    Terry Pak
+                    Terry
                   </span>
                   <span class="friend__bottom-text">
-                    I love you TIA!
+                    see you this friday 😘
                   </span>
                 </div>
               </div>
               <div class="friend__column">
-                <span class="chat__timestamp">Nov 10</span>
+                <span class="chat__timestamp">2:23PM</span>
+              </div>
+            </div>
+          </a>
+        </li>
+        <li class="chats__chat chat">
+          <a href="chat2.html">
+            <div class="friends__friend friend friend-hover">
+              <div class="friend__column">
+                <img class="friend__avatar  m-avatar" src="img/jiyoon.png" />
+                <div class="friend__content">
+                  <span class="friend__name">
+                    윤
+                  </span>
+                  <span class="friend__bottom-text">
+                    응응?
+                  </span>
+                </div>
+              </div>
+              <div class="friend__column">
+                <div class="friend__content">
+                  <span class="chat__timestamp">Nov 12</span>
+                  <div class="chat__badge">4</div>
+                </div>
               </div>
             </div>
           </a>
@@ -75,7 +100,7 @@
         </li>
         <li class="nav__list-item">
           <a href="index.html" class="nav__list-link">
-            <div class="nav__badge">8</div>
+            <div class="nav__badge">4</div>
             <i class="fas fa-comment"></i>
           </a>
         </li>
@@ -92,7 +117,9 @@
       </ul>
     </nav>
     <div class="bigScreen">
-      <span class="bigScreen__text">Please make your screen small 😱</span>
+      <h1 class="bigScreen__text">
+        Please make your screen <br />SMALL<br />:)
+      </h1>
     </div>
   </body>
 </html>
