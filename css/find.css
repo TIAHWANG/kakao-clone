@@ -2,6 +2,10 @@
   margin-top: 50px;
 }
 
+.find i {
+  cursor: poiner;
+}
+
 .find .find__header-list {
   display: flex;
   justify-content: space-around;

@@ -10,6 +10,7 @@
 @import "settings.css";
 @import "chat.css";
 @import "mobile.css";
+@import "side-bar.css";
 
 * {
   box-sizing: border-box;

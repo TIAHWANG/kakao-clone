@@ -1,8 +1,22 @@
+.body-header {
+  padding: 10px 0px;
+  padding-top: 100px;
+}
+
+.body-header .header,
+.body-header .status-bar {
+  padding: 0px 20px;
+}
+
+.body-header {
+  min-height: 150vh;
+}
+
 .header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 30px;
+  margin-bottom: 15px;
 }
 
 .header .header__title {
@@ -16,6 +30,11 @@
   cursor: pointer;
 }
 
+.header .header__icon:hover,
+.header__header-column i:hover {
+  color: rgba(63, 76, 107, 0.9);
+}
+
 .header .header__header-column {
   display: flex;
   align-items: center;
@@ -24,4 +43,25 @@
 .header .header__back-btn {
   font-size: 24px;
   margin-right: 20px;
+}
+
+.header .header__animate {
+  animation: bounceIn 7s ease-in-out infinite;
+  color: #3f4c6b;
+}
+
+@keyframes bounceIn {
+  10%,
+  30%,
+  50%,
+  80% {
+    color: rgba(239, 107, 100);
+  }
+  0%,
+  20%,
+  40%,
+  60%,
+  100% {
+    color: #3f4c6b;
+  }
 }

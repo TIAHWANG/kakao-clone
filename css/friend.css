@@ -48,6 +48,7 @@
 .friend .chat__timestamp {
   font-size: 12px;
   opacity: 0.6;
+  display: block;
 }
 
 .friend__column .friend__now-listening {
@@ -73,4 +74,60 @@
   align-items: center;
   background-color: #f5f5f5;
   border-radius: 5px;
+}
+
+.friend.friend-hover:hover {
+  transform: translateY(-10px);
+  border: 2px solid rgba(63, 76, 107);
+  box-shadow: 0 0 10px 5px rgba(63, 76, 107, 0.63);
+  border-radius: 10px;
+  padding: 8px;
+}
+
+@keyframes spin {
+  from {
+    transform: none;
+  }
+  to {
+    transform: rotateY(1turn);
+  }
+}
+
+.friend.friend-hover:hover img {
+  animation: flip 2s linear infinite;
+}
+
+@keyframes flip {
+  0% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+  50% {
+    transform: rotate3d(0, 1, 0, -180deg);
+  }
+  100% {
+    transform: rotate3d(0, 1, 0, 180deg);
+  }
+}
+
+.chats__list li {
+  margin-bottom: 20px;
+}
+
+.friends__list li,
+.find__recommended li {
+  margin-bottom: 10px;
+}
+
+.chats__list .chat__badge {
+  font-size: 10px;
+  color: white;
+  background-color: #dc5d46;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  margin-left: 20px;
+  margin-top: 3px;
 }
